@@ -1,0 +1,122 @@
+<!-- version 5 of HTML -->
+<!DOCTYPE html>
+<!-- Start the HTML Document -->
+<html>
+<!-- Start the head contain -->
+<head>
+	<!-- Meta tag:It provide keyword and a description of page -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keyword" content="HTML,CSS,JS">
+	<meta name="author" content="Kushal Shrestha">
+	<meta name="description" content="Portfolio">
+	<meta http-equiv="refresh" content="100s">
+	<!-- Start and End Title.It contains title of web page -->
+	<title> Kushal Shrestha</title>
+	<!-- It link CSS -->
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<style>
+		.id{
+			font-size: 50px;
+		}
+		.table1{
+			background-color: #D7CEC7;
+			border-color: white;
+		}
+	</style>
+<!-- End the head contain -->
+</head>
+<!-- Start Body.It contain the conatin of web page -->
+<!-- Inline CSS is linked-->
+<body style="background-color: #cebca6"> 
+	<!--Start header -->
+	<header>
+		<!-- Start and End division -->
+		<div class="container"></div>
+			<!-- Start Navigation bar -->
+			<nav>
+				<!-- Start unorderlist -->
+				<ul>
+					<!-- li tage is used to list item -->
+					<!-- a tag is used to link the page  -->
+					<li><a href="home.html">Home</a></li>
+					<li><a href="CV.html">CV</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="Research.html">Research</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				<!-- End unorderlist-->	
+				</ul>
+			<!-- End Navigation bar-->
+			</nav>
+	<!-- End header-->		
+	</header>	
+	<section class="CVbackground">
+		<table  border="1" align="center"  class="table1">
+			<tr><th><h1 id="header5">Who Am I?</h1></th></tr>
+			<th align="left">
+			<img src="./photo/kushal3.jpg" align="right" width="25%" height="35%">
+			Name: Kushal Shrestha<br>
+			Phone Number: 9819389911<br>
+			Address: Dharan-10,Sunsari,Nepal<br>
+			Email Address: KushalShrestha@gamil.com
+			<h2 > Personal Information</h2>
+					<li>Religion: Hindu</li>
+					<li>Date of birth: 1999/5/31</li>
+					<li>Nationality: Nepali</li>
+					<li>Marital Status: Single</li>
+				<h2 > Qualification</h2>
+					<li>Currently BIT student at Itahari Iternational College, London Metropolitan University</li>
+					<li>Diploma in Software Engineer</li>
+					<li>Grade 11 to 12 in Computer Science from Dharan Adarsha,Dharan</li>
+					<li>Schooling from Merryland English Boarding School</li>
+				<h2>Profesional Skills</h2>
+					<li>HTML5,CSS3,Javascript</li>
+					<li>JAVA,Python</li>
+					<li>Affiliated Marketing</li>
+					<li>Operating System:Window, Mac, Linux</li>
+				<h2>Basic Skill</h2>
+					<li>Team Leadership</li>
+					<li>Accounting and Finance</li>
+					<li>Social Media Marketing</li>
+					<li>Excellent Math Skills</li>
+					<li>Communucatioin Skills</li>
+					<li>Presentation Skills</li>
+				<h2>Technical Skills</h2>
+					<li>Adobe Photoshop</li>
+					<li>Microsoft paint,Microsoft word,Microsoft Office,Microsoft Excel,Microsoft PowerPoint</li>
+				 	<li>Google Drive</li>
+				 <h2>Experience</h2>
+				 	<li>PhotoShop In Annapurana Photo Studio</li>
+				 	<li>Affiliated Marketing</li>
+				 	<li>Accountant In Olive Cafe,Dharan</li>
+				 	<li>Teaching</li>
+				 	<li>Swimming Trainer</li>
+				 <h2>Interest</h2>
+				 	<li>Computer Science</li>
+				 	<li>Internate and Technology</li>
+				 	<li>Extra Language: English, Korean and Hindi</li>
+				 	<li>Sports: Football, VolleyBall, BasketBall,Cricket, Table-tennis and Swimming</li>
+
+			</th>
+
+		</table>
+		<script>
+			setInterval(
+			function () {
+  			var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  			document.getElementById('header5').style.backgroundColor = "#"+randomColor;},1200);//this function will change the background
+		</script>
+			
+	</section>
+	<!-- Start footer -->
+	<footer class="footercolor">
+		<div>
+		<p align="center">Copyright &copy 2020 All rights reserved<br>Designed by Kushal Shrestha
+		</p>
+		</div>
+	<!-- End footer-->
+	</footer>
+<!-- End body-->
+</body>
+<!-- End the HTML Document-->
+</html> 

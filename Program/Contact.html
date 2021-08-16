@@ -1,0 +1,94 @@
+<!-- version 5 of HTML -->
+<!DOCTYPE html>
+<!-- Start the HTML Document -->
+<html>
+<!-- Start the head contain -->
+<head>
+	<!-- Meta tag:It provide keyword and a description of page -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="keyword" content="HTML,CSS,JS">
+	<meta name="author" content="Kushal Shrestha">
+	<meta name="description" content="Portfolio">
+	<meta http-equiv="refresh" content="100s">
+	<!-- Start and End Title.It contains title of web page -->
+	<title> Kushal Shrestha</title>
+	<!-- It link CSS -->
+	<link rel="stylesheet" type="text/css" href="style1.css">
+<!-- End the head contain -->
+</head>
+<!-- Start Body.It contain the conatin of web page -->
+<!-- Inline CSS is linked-->
+<body style="background-color: #96858F"> 
+		<!--Start header -->
+	<header>
+		<!-- Start and End division -->
+		<div class="container"></div>
+			<!-- Start Navigation bar -->
+			<nav>
+				<!-- Start unorderlist -->
+				<ul>
+					<!-- li tage is used to list item -->
+					<!-- a tag is used to link the page  -->
+					<li><a href="home.html">Home</a></li>
+					<li><a href="CV.html">CV</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="Research.html">Research</a></li>
+					<li><a href="Contact.html">Contact</a></li>
+				<!-- End unorderlist-->	
+				</ul>
+			<!-- End Navigation bar-->
+			</nav>
+	<!-- End header-->		
+	</header>
+	<section class="container2">
+		<div class="contact">
+		<div class="header"> <h1>Get In Touch</h1></div>
+		<!-- Collect the data of user-->
+		<form onsubmit="workingform()" name="formvalid">
+			First Name<br> <!-- br tag break the line -->
+			<input class="input" type="text" name="Firstname"><br>
+			Last Name<br>
+			<input class="input" type="text" name="Lastname"><br>
+			Email Address<br>
+			<input class="input"type="text" name="EmailAddress"><br>
+			Password<br>
+			<input class="input" type="password" name="Password"><br>
+			Gender<br> 
+			<input type="radio" name="Gender" value="Male"> Male<br>
+			<input type="radio" name="Gender" value="Female"> Female<br>
+			<input type="radio" name="Gender" value="Other"> Other <br>
+			<textarea class="textarea" name="message" rows="5" cols="55" placeholder="Tell me how can I help you...."></textarea><br>
+			<button class="btn" name="Submit">Submit</button>
+		</form>
+	</div>
+	</section>
+	<!-- Start the JavaScript (Popup function)-->
+	<script type="text/javascript">
+		function workingform() {
+			var Firstname = document.forms["formvalid"]["Firstname"].value;
+			var Lastname = document.forms["formvalid"]["Lastname"].value;
+			var EmailAddress = document.forms["formvalid"]["EmailAddress"].value;
+			var Password = document.forms["formvalid"]["Password"].value;
+			var Gender = document.forms["formvalid"]["Gender"].value;
+			//if condition is used when then the form is empty
+			if (Firstname =="" ||Lastname =="" ||EmailAddress =="" ||Password =="" ||Gender =="") {
+				alert("Please fill empty box");//it will display at the top when the box is empty 
+			}else{
+				alert("Thank you for your feedback");//it will display thank you when all the data are input by the user
+				}
+			}	
+	</script>
+
+	<!-- Start footer -->
+	<footer class="footercolor">
+		<div>
+		<p align="center">Copyright &copy 2020 All rights reserved<br>Designed by Kushal Shrestha
+		</p>
+		</div>
+	<!-- End footer-->
+	</footer>
+<!-- End body-->
+</body>
+<!-- End the HTML Document-->
+</html> 
